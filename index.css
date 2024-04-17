@@ -1,0 +1,81 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background-image: url("images/table.png");
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 15vh;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+#message-el {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.name {
+    height: 52px;
+    text-align: center;
+    width: 180px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.action-btn {
+    color: #016f32;
+    background: goldenrod;
+    padding: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 180px;
+}
+
+.action-btn:hover {
+    background: #e5c554;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.action-btn:active {
+    transform: scale(0.96);
+    box-shadow: none;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Media Queries */
+/* Medium Screens */
+@media (max-width: 768px) {
+    .name {
+        width: 40%;
+        margin: 5px;
+    }
+
+    .action-btn {
+        width: 40%;
+        margin: 5px;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+    .action-btn {
+        width: 80%;
+        margin: 5px auto;
+        display: block;
+    }
+}
